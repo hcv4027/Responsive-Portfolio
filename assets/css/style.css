@@ -107,31 +107,45 @@ input[name=message], select{
 
 /* MEDIA QUERIES */
 
+/* Below, you will find the required media queries to make the pages created in homework #1 more responsive.
+   Using the mesuring extension that we were requested to add to Google Chrome, I did some rough mesurements,
+   and adjusted the divs that control the page content to respond to the desired screen maximum widths of:
+   980 px, 768 px and 640 px. An additional featured I added was to contrast these 3 different maximum-width
+   sizes with different colored backgrounds so that you would know when the resizing effect for each maximum-
+   width was in effect. At 640 px (background changes to Orange). At 768 px (background changes to Yellow),
+   At 980 px (background changes to Maroon). */
+
 @media screen and (max-width: 980px){
     #aboutme{
-        /* border: 5px solid #ddd;
-        background-color: #fff; */
-        width: 585px;
-        /* margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 10px; */
-        
+        width: 615px;        
     }
     p img{
-        /* float:left;
-        padding-left: 20px; */
         width: 201px;
         height: 168px;
-        /* padding-right: 16px; */
     }
 }
+
 @media screen and (max-width: 768px){
+    #aboutme{
+        width: 713px;        
+    }
+    p img{
+        width: 325px;
+        height: 244px;
+    }
     #content{
         background-color: yellow;
     }
 }
 
 @media screen and (max-width: 640px){
+    #aboutme{
+        width: 585px;        
+    }
+    p img{
+        width: 525px;
+        height: 375px;
+    }
     #content{
         background-color: orange;
     }
